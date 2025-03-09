@@ -40,4 +40,16 @@ public class Meeting {
     public String getMeetingId() {
         return meetingId;
     }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public LocalDateTime getStartTime() {
+        return startTime;
+    }
+
+    public int getDuration() {
+        return duration;
+}
 }

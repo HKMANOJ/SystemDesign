@@ -1,12 +1,11 @@
 package Lowleveldesign.DesignPriority;
 
-public class Admin implements Role{
-
+public class Admin implements Role {
     @Override
-    public void access(String name) {
-        if ("Admin".equalsIgnoreCase(name)) {
+    public void access(RoleType roleType) {
+        if (roleType == RoleType.ADMIN) {
             System.out.println("Welcome Admin portal");
-        }else {
+        } else {
             System.out.println("You dont have the right access for this endpoint");
         }
     }
